@@ -1,0 +1,34 @@
+html,
+body { 
+    display: block;
+    height: 100%;
+    background: #000000
+    url(/Fishing\ -\ 44534.gif);
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    text-align: center
+}
+h3 {
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+a:link , a:visited {
+    font-weight: 800;
+    text-decoration: none;
+    color : rgb(0,255,0)
+}
+/*a:visited {
+    color: rgb(255,0,0)
+}*/
+a:hover {
+    color: rgb(255,0,0)
+}
+a:active {
+    color: rgb(0,0,0)
+}
+

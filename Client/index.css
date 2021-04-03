@@ -5,8 +5,8 @@ body {
     background: #000000
     url(/Fishing\ -\ 44534.gif);
     margin: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    background-size: cover;
+
 }
 
 h2 {

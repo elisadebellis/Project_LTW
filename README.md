@@ -4,11 +4,12 @@
 # Descrizione:
  Realizzazione di un sito web dedicato alla pesca sportiva nelle acque del territorio italiano. 
 
-  Si presenterà con un’interfaccia utente iniziale avente una gif come sfondo e cinque bottoni per:
+  Si presenterà con un’interfaccia utente iniziale avente una gif come sfondo e sei bottoni per:
   - Registrazione al sito
   - Login al sito
   - Indirizzamento alla pagina con la mappa geografica d’Italia 
   - Store del sito 
+  - Pagina per informazioni
   - Indirizzamento alla pagina di tesseramento
 
  ° La registrazione al sito sarà consentita solo previa accettazione delle condizioni descritte dal regolamento (checkbox)

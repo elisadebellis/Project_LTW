@@ -30,8 +30,8 @@ body {
 #menu img {
     display:inline;
     margin:10px auto;
-    height:60px;
-    width:80px;
+    height:70px;
+    width:90px;
 }
 
 #menu a.btn{
@@ -45,7 +45,7 @@ body {
 }
 
 #menu-2 li {
-    padding-left: 350px;
+    padding-left: 380px;
     margin:auto;
 }
 

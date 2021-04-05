@@ -6,11 +6,13 @@ body {
 
 /* parte superiore della barra del menu*/
 
-#menu {
-    height: 80px;
+header {
+    height: 100%;
+    width: 100%;
     background-color: black;
     padding: 0px;
-    display:flex;
+    display:inline-flex;
+    
 }
 
 
@@ -28,8 +30,8 @@ body {
 
 
 #menu img {
-    display:inline;
-    margin:10px auto;
+    display:inline-flex;
+    margin:0 auto;
     height:70px;
     width:90px;
 }
@@ -43,11 +45,16 @@ body {
     font-weight: bold;
     font-style:normal;
 }
+#menu-2 a.btn {
+    font-size:25px;
+}
 
 #menu-2 li {
-    padding-left: 380px;
-    margin:auto;
+    padding-left: 50%;
+    margin:0 auto;
+    display:block;
 }
+
 
 #menu a.btn:hover {
     background:red; /* Sfondo */
@@ -57,6 +64,7 @@ body {
     display:block; 
     position: relative;
     float: left;
+    
 }
 
 #menu-1 li ul{
@@ -81,13 +89,14 @@ body {
 /*parte centrale con video e logo*/
 
 #video-logo {
-    height: 900px;
+    height: 750px;
+    width: 100%;
     display: block;
     background: url(/Fishing\ -\ 44534.gif);
     
 }
 #image {
-    padding-top:300px;
+    padding-top:200px;
 }
 
 #image label {
@@ -95,12 +104,14 @@ body {
     color:white;
     font-weight: bold;
     font-style: italic;
+    
 }
 
 #video-logo img {
     height: 300px;
     width: 300px;
     border-radius: 180px;
+
     /*-moz-box-shadow: inset 0 0 4px rgba(0,0,0,1),
                      inset 0 2px 1px rgba(255,255,255,.5),
                      inset 0 -9px 2px rgba(0,0,0,.6),
@@ -119,8 +130,8 @@ body {
 }
 #goal {
     padding-top: 20px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
     font-weight: bold;
     font-size: 25px;
 }

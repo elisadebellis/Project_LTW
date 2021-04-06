@@ -7,7 +7,7 @@ body {
 /* parte superiore della barra del menu*/
 
 header {
-    height: 100%;
+    height: 80px;
     width: 100%;
     background-color: black;
     padding: 0px;
@@ -15,19 +15,24 @@ header {
     
 }
 
-
 #menu ul {
-    width: 800px;
-    padding:0;
-    margin: auto;
+    padding: 0;
     display:flex;
-    list-style-type:none; /* Stile della lista */
+    list-style-type: none; /* Stile della lista */
     }
+#menu-1 {
+    margin-left: 0;
+}
+#menu-2 {
+    margin-right: 0;
+}
+#menu-center {
+    margin: auto;
+}
 
 #menu li {
     display:inline-block; 
 }
-
 
 #menu img {
     display:inline-flex;
@@ -36,35 +41,41 @@ header {
     width:90px;
 }
 
+#menu-1 img {
+    height:50px;
+    width:60px;
+}
+
 #menu a.btn{
     font-size: 30px;
     color:white; /* Colore del testo */
     text-decoration:none; /* Nessuna decorazione */
     background:black; /* Colore dello sfondo */
-    padding:0px 30px; /* Distanza tra le singole voci */ 
+    padding:0px 0px; /* Distanza tra le singole voci */ 
     font-weight: bold;
-    font-style:normal;
+    font-style:italic;
+    width: 170px;
 }
 #menu-2 a.btn {
     font-size:25px;
+    float:left;
+    width:auto;
 }
 
 #menu-2 li {
-    padding-left: 50%;
     margin:0 auto;
     display:block;
 }
 
 
 #menu a.btn:hover {
-    background:red; /* Sfondo */
+    background-color:rgb(112, 32, 32);/* Sfondo */
 }
 
 #menu-1 li:hover ul li {
-    display:block; 
+    display:flex; 
     position: relative;
     float: left;
-    
 }
 
 #menu-1 li ul{
@@ -76,15 +87,10 @@ header {
 
 #menu-1 li:hover ul {
     display: block;
-    width: 300px;
+    width: auto;
+    background-color:black;
 }
 
-
-#menu-1  li:hover ul a:hover {
-    background-color:red;
-    background-image:none;
-    color:#FFFFFF;
-}
 
 /*parte centrale con video e logo*/
 
@@ -92,7 +98,7 @@ header {
     height: 750px;
     width: 100%;
     display: block;
-    background: url(/Fishing\ -\ 44534.gif);
+    background: url(Fishing\ -\ 44534.gif);
     
 }
 #image {

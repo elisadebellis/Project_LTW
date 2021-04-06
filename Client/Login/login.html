@@ -5,38 +5,57 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="style.css" />
 
-        <script type="text/javascript" lang="javascript" src="/js/bootstrap.min.js"> </script>
+        <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"> </script>
         <script type="text/javascript" lang="javascript" src="script.js"> </script> 
 
     </head>
 
     <body class="text-center">
+        <header id="menu">
+            <ul id="menu-1">
+            <li> <a href="#" role="button" class="img" > <img src="../img/hamburger.png "> </a>
+                <ul>
+                    <li> <a href="../Gofishing/gofishing.html" role="button" class="btn"> GO FISHING </a></li><br>
+                    <li> <a href="../ChiSiamo/chisiamo.html" role="button" class="btn"> CHI SIAMO </a></li><br>
+                    <li> <a href="../Store/store.html" role="button" class="btn"> NEGOZIO </a></li><br>
+                    <li> <a href="../Faq/faq.html" role="button" class="btn" > FAQ </a></li><br>
+                    <li> <a href="../Galleria/galleria.html" role="button" class="btn"> GALLERIA </a> </li>   
+                </ul>
+            </li>
+            </ul>
+            <ul id="menu-center">
+                <a href="../index.html" role="button" class="img"> <img src="../img/logo.png"> </a>
+            </ul>  
+            <ul id="menu-2">
+                <li> <a href="../index.html" role="button" class="btn"> Home </a> 
+            </ul>
+        </header>
+        <div id="form">
+            <form action="login.php" class ="form-signin" method="POST" name="myForm" onsubmit="return validateForm()">
 
-        <form action="login.php" class ="form-signin" method="POST" name="myForm" onsubmit="return validateForm()">
-
-            <img class="mb-4" src="/img/logo.png" alt="" 
-                     style ="border-radius: 180px;width:200px; height:200px;"/>
-            <h1 class="h3 mb-3" style="color:whitesmoke;"> 
-                Fai l'accesso qui 
-            </h1>
-            <input type="email" name="inputEmail" required
-                    placeholder="Indirizzo Email" autofocus/>
-            <input type="password" name="inputPassword" required 
-                    placeholder="Password" />
-            <div id="divRemember" class="checkbox mb-3">
-                <input type="checkbox" name="remember" />
-                <label for="remember" style="color:whitesmoke;">
-                    Ricordami 
-                </label>
-            </div >
-            <button class="btn btn-lg btn-primary" name="loginButton" type="submit">
-                Accedi
-            </button>
-        
-        </form>
-
+                <img class="mb-4" src="../img/logo.png" alt="" 
+                        style ="border-radius: 180px;width:200px; height:200px;"/>
+                <h1 class="h3 mb-3" style="color:whitesmoke;"> 
+                    Fai l'accesso qui 
+                </h1>
+                <input type="email" name="inputEmail" required
+                        placeholder="Indirizzo Email" autofocus/>
+                <input type="password" name="inputPassword" required 
+                        placeholder="Password" />
+                <div id="divRemember" class="checkbox mb-3">
+                    <input type="checkbox" name="remember" />
+                    <label for="remember" style="color:whitesmoke; padding:0;">
+                        Ricordami 
+                    </label>
+                </div >
+                <button class="btn btn-lg btn-primary" name="loginButton" type="submit">
+                    Accedi
+                </button>
+                <label> Se non sei ancora registrato?  <a href="Registrazione/registrazione.html" role="button" class="btn"> Clicca qui </a>
+            </form>
+        </div>
     </body>
 </html>

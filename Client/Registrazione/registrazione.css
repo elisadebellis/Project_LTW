@@ -1,0 +1,191 @@
+html,
+body {
+  background:
+  url(../img/lake-696098_1920.jpg);
+
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  padding: 0px;
+  display:inline-flex;
+  
+}
+
+#menu ul {
+  padding: 0;
+  display:flex;
+  list-style-type: none; /* Stile della lista */
+  }
+#menu-1 {
+  margin-left: 0;
+}
+#menu-2 {
+  margin-right: 0;
+}
+#menu-center {
+  margin: auto;
+}
+
+#menu li {
+  display:inline-block; 
+}
+
+#menu img {
+  display:inline-flex;
+  margin:0 auto;
+  height:70px;
+  width:90px;
+}
+
+#menu-1 img {
+  height:50px;
+  width:60px;
+}
+
+#menu a.btn{
+  font-size: 30px;
+  color:white; /* Colore del testo */
+  text-decoration:none; /* Nessuna decorazione */
+  background:black; /* Colore dello sfondo */
+  padding:0px 0px; /* Distanza tra le singole voci */ 
+  font-weight: bold;
+  font-style:italic;
+  width: 170px;
+}
+#menu-2 a.btn {
+  font-size:25px;
+  float:left;
+  width:auto;
+}
+
+#menu-2 li {
+  margin: auto;
+  display:block;
+}
+
+
+#menu a.btn:hover {
+  background-color:rgb(112, 32, 32);/* Sfondo */
+}
+
+#menu-1 li:hover ul li {
+  display:flex; 
+  position: relative;
+  float: left;
+}
+
+#menu-1 li ul{
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+
+#menu-1 li:hover ul {
+  display: block;
+  width: auto;
+  background-color:black;
+}
+
+/*Parte centrale FORM*/
+*{
+    box-sizing: border-box;
+    
+  }
+  
+  input[type=text], select, textarea {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+  }
+
+  input[type=date] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+  }
+
+  input[type=email] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+  }
+
+  input[type=password] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+    float: right;
+  }
+  
+  button[type=submit] {
+    float: right;
+    width: min-content;
+    background-color: #471111;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    float:none;
+    
+  }
+  
+  button[type=submit]:hover {
+    background-color: #000000;
+  }
+  
+  .container {
+    width:80%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.726);
+  }
+  
+  .col-30 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+  }
+  
+  .col-70 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-30, .col-70, button[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}

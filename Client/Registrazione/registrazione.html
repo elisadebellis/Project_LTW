@@ -1,8 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <body>
-            
-        </body>
+        <title> Registrazione</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="registrazione.css" />
+
+        <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"> </script>
+        <script type="text/javascript" lang="javascript" src="scriptregist.js"> </script> 
+
     </head>
+    <body class="text-center">
+        <header id="menu">
+            <ul id="menu-1">
+            <li> <a href="#" role="button" class="img" > <img src="../img/hamburger.png "> </a>
+                <ul>
+                    <li> <a href="../Gofishing/gofishing.html" role="button" class="btn"> GO FISHING </a></li><br>
+                    <li> <a href="../ChiSiamo/chisiamo.html" role="button" class="btn"> CHI SIAMO </a></li><br>
+                    <li> <a href="../Store/store.html" role="button" class="btn"> NEGOZIO </a></li><br>
+                    <li> <a href="../Faq/faq.html" role="button" class="btn" > FAQ </a></li><br>
+                    <li> <a href="../Galleria/galleria.html" role="button" class="btn"> GALLERIA </a> </li>   
+                </ul>
+            </li>
+            </ul>
+            <ul id="menu-center">
+                <a href="../index.html" role="button" class="img"> <img src="../img/logo.png"> </a>
+            </ul>  
+            <ul id="menu-2">
+                <li> <a href="../index.html" role="button" class="btn"> Home </a> 
+            </ul>
+        </header>
+
+        <div id="form" >
+            
+            <img class="mb-4" src="../img/logo.png" alt="" 
+                        style ="border-radius: 90px;width:100px; height:100px;"/>
+            <div class="container">
+
+            <h1 class="h3 mb-3" style="color:whitesmoke;"> 
+                Registati qui 
+            </h1>
+            
+                <form action="/action_page.php" class="reg-form"> 
+                <div class="row">
+                  <div class="col-30">
+                    <label for="cognome">Cognome:</label>
+                  </div>
+                  <div class="col-70">
+                    <input type="text" id="cognome" name="cognome" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-30">
+                    <label for="lname">Nome:</label>
+                  </div>
+                  <div class="col-70">
+                    <input type="text" id="nome" name="nome" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-30">
+                    <label for="country">Data di Nascita: </label>
+                  </div>
+                  <div class="col-70">
+                    <input type="date" id="date" name="data" required>
+                  </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-30">
+                        <label for="subject">E-mail:</label>
+                    </div>
+                    <div class="col-70">
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <label for="subject">Password:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="password" id="pass" name="pass" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <label for="subject">Conferma password:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="password" id="pass" name="pass" required>
+                    </div>
+                </div>
+                    <br>
+                    <button class="btn btn-lg btn-primary" name="loginButton" type="submit" >
+                        Registrati
+                    </button>
+               
+                </form>
+              </div>
+            
+
+
+        </div>  
+    </body>
+    
 </html>

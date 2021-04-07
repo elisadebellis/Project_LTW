@@ -4,15 +4,23 @@
         <title> Homepage  </title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+        
         <link rel="stylesheet" type="text/css" href="index.css"/> 
+        
+        <script type="text/javascript" lang="javascript" src="index.js"> </script> 
         
     </head>
     <body>
         <header id="menu">
             <ul id="menu-1">
-            <li> <a href="#" role="button" class="img" > <img src="img/hamburger.png "> </a>
-                <ul>
+            <li> <div class="container" onclick="myFunction(this)" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+
+                <ul id="men">
+                    
                     <li> <a href="Gofishing/gofishing.html" role="button" class="btn"> GO FISHING </a></li><br>
                     <li> <a href="ChiSiamo/chisiamo.html" role="button" class="btn"> CHI SIAMO </a></li><br>
                     <li> <a href="Store/store.html" role="button" class="btn"> NEGOZIO </a></li><br>
@@ -28,6 +36,9 @@
                 <li> <a href="Login/login.html" role="button" class="btn"> Accedi </a> 
             </ul>
         </header>
+
+
+
         <div id="video-logo" align="center">
             <div id="image">
                 <img src="img/logo.png">
@@ -41,6 +52,28 @@
                                           Vogliamo condividere con voi appassionati di pesca sportiva riportando qui nel sito tutti i fiumi e i laghi del nostro paese con 
                                           le relative specie ittiche che vi appartengono.  </label>
         </div>
+
+
+        <footer id="footer">
+            <ul id="imagefooter" align="left">
+                <img src="img/White-logo.png" >
+            </ul>
+            
+            <ul id="menufooter" align="center">
+                <li> <a href="ChiSiamo/chisiamo.html" role="button" class="btn"> CHI SIAMO </a></li><br>
+                <li> <a href="Privacy/privacy.html" role="button" class="btn" > PRIVACY POLICY </a></li><br>
+            </ul>
+
+            <ul id="social" align="right">
+                <label> Facebook: </label>
+                <br>
+                <label> Instagram: </label>
+                <br>
+                <label> Telefono: </label>
+                <br>
+                <label> E-mail: </label>
+            </ul>
+        </footer>
     </body>
 </html>
 
@@ -49,39 +82,3 @@
 
 
 
-
- <!--
-<h3 align="right" class="text-right">
-    <a href="/Login/login.html" role="button" class="btn btn-primary btn-lg">
-        Accedi
-    </a>
-    &nbsp;
-    <a href="/Registrazione/registrazione.html" role="button" class="btn btn-primary btn-lg">
-        Registrazione
-    </a>
-</h3>
-<table align="center" class="text-center">
-    <tr>
-        <th>
-            <img src="/img/angler-3308264_1920.jpg" style="height: 150px;width:150px; border-radius: 180px;">
-            <br>
-            <a href="/ChiSiamo/chisiamo.html" role="button" class="btn btn-primary btn-lg">
-                CHI SIAMO
-            </a>
-        </th> 
-        <th>
-            <img src="/img/fishing-rod-5277293_1920.jpg" style="height: 150px;width:150px ;border-radius: 180px;">
-            <br> 
-            <a href="/Store/store.html" role="button" class="btn btn-primary btn-lg">
-                NEGOZIO
-            </a>
-        </th>
-    </tr>
-</table>
-<p align="center" class="text-bottom">    
-<img src="/img/fish.jpg" style="height: 300px;width:500px;" >
-<br>
-<a href="/Gofishing/gofishing.html" role="button" class="btn btn-primary btn-lg" style="font-size : 80px;">
-    ANDIAMO A PESCA!
-</a>  
-</p>-->
